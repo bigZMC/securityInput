@@ -28,7 +28,8 @@ export default {
         let that = this;
         // 监听focus事件
         document.onclick = function(){
-            if('currentDigit' === event.target.className || 'sixDigitPassword' === event.target.className){
+            // 通过监听点击的目标className/id来判断是否开始输入
+            if('currentDigit' === event.target.className || 'sixDigitPassword' === event.target.className || 'securityInput' === event.target.id){
                 that.beInputing = true;
             }else{
                 that.beInputing = false;
@@ -36,7 +37,7 @@ export default {
         }
         // 监听键盘事件
         document.onkeyup = function(){
-            that.digitInput(event.key, event.keyCode);
+            that.beInputing && that.digitInput(event.key, event.keyCode);
         }
     },
     mounted() {
