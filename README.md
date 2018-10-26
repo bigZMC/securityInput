@@ -1,7 +1,7 @@
 # securityInput
 VUE安全支付组件
 
-[在线DEMO](http://htmlpreview.github.io/?https://github.com/bigZMC/securityInput/blob/master/securityInput/dist/index.html)
+[在线DEMO](http://lianggecainiao.com/securityInput)
 
 # 运行步骤
 
